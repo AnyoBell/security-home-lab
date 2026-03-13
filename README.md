@@ -10,7 +10,7 @@ Home lab built to simulate real-world attack and defense scenarios.
 - **Attack:** Kali Linux
 - **Defense:** Ubuntu Server
 - **Monitoring:** Elastic Stack (SIEM)
-- **Vulnerable Machines:** TryHackMe, HackTheBox
+- **Vulnerable Machine:** Metasploitable
 
 ## Structure
 ```
