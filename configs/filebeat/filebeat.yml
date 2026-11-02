@@ -1,0 +1,9 @@
+filebeat.inputs:
+  - type: filestream
+    id: system-logs
+    paths:
+      - /var/log/auth.log
+      - /var/log/syslog
+
+output.logstash:
+  hosts: ["192.168.64.4:5044"]
