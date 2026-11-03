@@ -1,0 +1,26 @@
+services:
+  juice-shop:
+    image: bkimminich/juice-shop:latest
+    container_name: juice-shop
+    restart: unless-stopped
+    networks: [target]
+
+  nginx:
+    image: nginx:stable
+    container_name: juice-nginx
+    restart: unless-stopped
+    ports:
+      - "${LISTEN_IP}:8080:80"
+    volumes:
+      - ./nginx-juice.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on: [juice-shop]
+    networks: [target]
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://${LISTEN_IP}:5514"
+        tag: "juice-nginx"
+
+networks:
+  target:
+    driver: bridge
