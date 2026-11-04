@@ -61,4 +61,4 @@ On Kali, from `configs/filebeat`, set the SIEM VM's IP in `filebeat.yml`, then r
 - [x] ELK stack with HTTPS
 - [x] Kali and Juice Shop logs flowing in
 - [x] First ATT&CK-mapped detection (T1190)
-- [ ] Brute-force detection (T1110)
+- [x] Brute-force detection (T1110)
