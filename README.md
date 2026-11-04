@@ -42,7 +42,7 @@ On Kali, from `configs/filebeat`, set the SIEM VM's IP in `filebeat.yml`, then r
 | Rule | MITRE ATT&CK | Status |
 |------|--------------|--------|
 | Juice Shop SQL injection probe (encoded quote in request) | T1190 Exploit Public-Facing Application | Working |
-| Juice Shop login brute force (threshold on failed logins) | T1110 Brute Force | Planned |
+| Juice Shop login brute force (threshold on failed logins) | T1110 Brute Force | Working |
 
 ## Security notes
 
